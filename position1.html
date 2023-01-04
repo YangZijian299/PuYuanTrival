@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="">
+		<title>濮院旅游</title>
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+	</head>
+	<style>
+		.position1-intro{
+			position: absolute;
+			width:100%;
+			height:auto;
+			z-index: 0;
+		}
+		.position1-ringTheBell{
+			position: absolute;
+			width:100%;
+			height:auto;
+			z-index: 1;
+		}
+		.position1-wishes{
+			position: absolute;
+			width:100%;
+			height:auto;
+			z-index: 2;
+		}
+	</style>
+
+	<body>
+		<div class="mainMap">
+			<img class="position1-intro" src="res/濮院旅游-地点1介绍.jpg" onclick="show1()">
+			<img class="position1-ringTheBell" src="res/濮院旅游-地点1-敲钟.jpg" style="display: none;" onclick="show2()">
+			<img class="position1-wishes" src="res/濮院旅游-地点1-赢祝福.jpg" style="display: none;" onclick="show3()">
+		</div>
+	</body>
+	<script>
+		function show1(){
+        	$(".position1-ringTheBell").fadeIn(1000);
+		}
+		function show2(){
+        	$(".position1-wishes").fadeIn(1000);
+		}
+		function show3(){
+			$(".position1-ringTheBell").fadeOut(1000,function(){
+				location.href="index.html";
+			});	
+		}
+
+	</script>
+</html>

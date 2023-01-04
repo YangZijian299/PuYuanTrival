@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="">
+		<title>濮院旅游</title>
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+	</head>
+	<style>
+			.map{
+				width: 100%;
+				height: auto;
+				z-index: 0;
+			}
+			.position1 {
+				position: absolute;
+				top: 32px;
+				left: 260px;
+				width: 354px;
+				height: auto;
+				cursor: pointer;
+				z-index: 1;
+			}
+			.position2{
+				position: absolute;
+				top: 294px;
+				left: 81px;
+				width: 332px;
+				height: auto;
+				cursor: pointer;
+				z-index: 1;
+			}
+			.position3{
+				position: absolute;
+				top: 487px;
+				left: 190px;
+				width: 365px;
+				height: auto;
+				cursor: pointer;
+				z-index: 1;
+			}
+			.position4{
+				position: absolute;
+				top: 742px;
+				left: 47px;
+				width: 288px;
+				height: auto;
+				cursor: pointer;
+				z-index: 1;
+			}
+	</style>
+	<script>
+			$(document).ready(function(){
+				$(".position1").click(function(){
+					location.href="position1.html";
+				});
+				$(".position2").click(function(){
+					location.href="position2.html";
+				});
+				$(".position3").click(function(){
+					location.href="position3.html";
+				});
+				$(".position4").click(function(){
+					location.href="position4.html";
+				});
+			});
+
+	</script>
+
+	<body>
+		<div class="mainMap">
+			<img class="map" src="res/濮院旅游-地图.jpg">
+			<img class="position1" src="res/濮院旅游-地点1.png">				
+			<img class="position2" src="res/濮院旅游-地点2.png">				
+			<img class="position3" src="res/濮院旅游-地点3.png">				
+			<img class="position4" src="res/濮院旅游-地点4.png">				
+		</div>
+	</body>
+</html>

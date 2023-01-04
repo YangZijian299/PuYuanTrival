@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="">
+		<title>濮院旅游</title>
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+	</head>
+	<style>
+		.position2-intro{
+			position: absolute;
+			width: 640px;
+			height: 1140px;
+			z-index: 1;
+		}
+		.scrollbox{
+			width: 640px;
+            height: 1140px;
+            overflow: hidden;/* 超出隐藏滚动条 */
+		}
+		.scrollbox .wrap{
+			width: 640px;/* 和父盒子宽度一样 */
+            height: 1140px;/* 比里层元素高16px 为了隐藏滚动条*/
+            overflow-x: scroll;/* 定义超出此盒子滚动 */
+            overflow-y: hidden;
+		}
+		.overflow{
+			width: 1920px;
+            display: flex;
+		}
+		.pic{
+			flex: 1;
+            width: 640px;
+            height: 1100px;
+            box-sizing: border-box;
+		}
+
+	</style>
+
+	<body>
+		<div class="mainMap">
+			<img class="position2-intro" src="res/濮院旅游-地点2介绍.jpg" onclick="show1()">
+			<div class="scrollBox">
+				<div class="wrap">
+					<div class="overflow">
+						<img class="pic" src="res/濮院旅游-地点2-滑动1.jpg">
+						<img class="pic" src="res/濮院旅游-地点2-滑动2.jpg">
+						<img class="pic" src="res/濮院旅游-地点2-滑动3.jpg">
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</body>
+	<script>
+		function show1(){
+        	$(".position2-intro").fadeOut(1000);
+		}
+		function show2(){
+        	$(".position1-wishes").fadeIn(1000);
+		}
+		function show3(){
+			$(".position1-ringTheBell").fadeOut(1000,function(){
+				location.href="index.html";
+			});	
+		}
+	</script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content=""/>
+		<title>濮院旅游</title>
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+	</head>
+	<style>
+		.position4-img{
+    		position: absolute;
+   			width: 100%;
+    		height: auto;
+			z-index: 1;
+		}
+		.position4-intro{
+			position: absolute;
+    		width: 100%;
+    		height: auto;
+    		z-index: 0;
+		}
+	</style>
+
+	<body>
+		<div class="mainMap">
+			<img class="position4-intro" src="res/濮院旅游-地点4-交互.jpg" onclick="show()">
+			<img class="position4-img" src="res/濮院旅游-地点4-交互素材.png" style="display: none;" onclick="hide()">		
+		</div>
+	</body>
+	<script>
+		function show(){
+        	$(".position4-img").fadeIn(1000);
+		}
+
+		function hide(){
+			$(".position4-img").fadeOut(1000,function(){
+				location.href="index.html";
+			});	
+		}
+
+	</script>
+</html>
